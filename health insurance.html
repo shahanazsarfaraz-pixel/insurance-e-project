@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+  
+
+  .health-insurance-section {
+    background-image: url(./sky-blue-background-jqm8aj5f36bqea5s.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    color: black; 
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  .plan-overview,
+  .pricing,
+  .faq-item {
+    animation: fadeInUp 1.5s ease forwards;
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .plan-overview {
+    animation-delay: 0.2s;
+  }
+
+  .pricing {
+    animation-delay: 0.4s;
+  }
+
+  .faq-item {
+    animation-delay: 0.6s;
+  }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  .faq-answer {
+    display: none;
+    padding: 10px 0;
+    animation: fadeIn 0.5s ease-in;
+  }
+
+  .faq-question {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1em;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .faq-question.active + .faq-answer {
+    display: block;
+  }
+
+  
+  footer {
+    animation: fadeIn 2s ease;
+  }
+</style>
+
+</style>
+</head>
+<body style="background-image: url(./7d503ff15c37416ccef167bfecb3baf2\ \(1\).jpg); background-repeat: no-repeat; background-size: cover;width: 100%;">
+    <header>
+    <div class="logo">
+      <img src="./360_F_463184824_xD3gLLjRH73vvrFUwrBhe8H538MjCOt6-removebg-preview.png" alt="Insurance Logo" />
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">index</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+       <li class="nav-item dropdown">
+          <a class="nav-link" href="./service.html" id="navbarDropdown" >
+            Service
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./lifeinsurance.html">life insurance</a></li>
+            <li><a class="dropdown-item" href="./autoinsurance.html">Auto insurance</a></li>
+          
+            <li><a class="dropdown-item" href="./health insurance.html">Health insurance</a></li>
+          </ul>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link " href="./contact.html" tabindex="-1" >contact</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  </header>
+<img src="./health-insurance.webp" alt=""width="100%"height="500px">
+    <section class="health-insurance-section">
+    <div class="container">
+      <h1>Comprehensive Health Insurance</h1>
+      <p class="subtitle">Protect yourself and your family with our all-inclusive health plans.</p>
+
+      <div class="plan-overview">
+        <h2>Plan Overview</h2>
+        <ul>
+          <li> Hospitalization Coverage up to $500,000/year</li>
+          <li> Prescription Benefits included</li>
+          <li> Free Annual Health Check-ups</li>
+          <li> Nationwide Network of Hospitals</li>
+        </ul>
+      </div>
+
+      <div class="pricing">
+        <h2>Pricing</h2>
+        <p><strong>Starting at $39/month</strong> for individuals, and $99/month for families.</p>
+        
+      </div>
+
+
+      <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">What is included in the coverage?</button>
+          <div class="faq-answer">
+            <p>It covers inpatient & outpatient services, diagnostics, surgery, pharmacy, and wellness programs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I include my family members?</button>
+          <div class="faq-answer">
+            <p>Yes! You can add your spouse, children, and even parents under our family plan.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Are pre-existing conditions covered?</button>
+          <div class="faq-answer">
+            <p>Pre-existing conditions are covered after a 1-year waiting period.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3> Insurance</h3>
+                    <p>Protecting your dreams and securing your future since 1985.</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Insurance Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="./lifeinsurance.html">Life Insurance</a></li>
+                        <li><a href="./autoinsurance.html">Auto Insurance</a></li>
+                        <li><a href="./index.html">Home Insurance</a></li>
+                        <li><a href="./health insurance.html">Health Insurance</a></li>
+                        <li><a href="./service.html">Business Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">File a Claim</a></li>
+                        <li><a href="#">Pay Bill</a></li>
+                        <li><a href="#">Find an Agent</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>1-800-SECURE-LIFE</p>
+                    <p>support@securelife.com</p>
+                    <p>123 Insurance Avenue<br>New York, NY 10001</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025  Insurance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

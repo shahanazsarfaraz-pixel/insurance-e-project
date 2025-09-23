@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Auto Insurance Details</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+
+
+  .auto-insurance-section {
+    background-image: url(./sky-blue-background-jqm8aj5f36bqea5s.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    color: black;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+ 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+ 
+  .plan-overview,
+  .pricing,
+  .faq-item {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1.5s ease forwards;
+  }
+
+  .plan-overview { animation-delay: 0.3s; }
+  .pricing { animation-delay: 0.6s; }
+  .faq-item:nth-child(1) { animation-delay: 0.9s; }
+  .faq-item:nth-child(2) { animation-delay: 1.1s; }
+  .faq-item:nth-child(3) { animation-delay: 1.3s; }
+
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+
+  .faq-question {
+    background-color: white;
+    color:black;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid #ffffff33;
+    transition: background-color 0.3s ease;
+  }
+
+  .faq-question:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease;
+    color: #fff;
+  }
+
+  .faq-question.active + .faq-answer {
+    display: block;
+  }
+
+
+  .auto-insurance-section img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+</style>
+
+
+
+  
+</head>
+<body >
+    <header>
+    <div class="logo">
+      <img src="./360_F_463184824_xD3gLLjRH73vvrFUwrBhe8H538MjCOt6-removebg-preview.png" alt="Insurance Logo" />
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">index</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+       <li class="nav-item dropdown">
+          <a class="nav-link" href="./service.html" id="navbarDropdown" >
+            Service
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./lifeinsurance.html">life insurance</a></li>
+            <li><a class="dropdown-item" href="./autoinsurance.html">Auto insurance</a></li>
+          
+            <li><a class="dropdown-item" href="./health insurance.html">Health insurance</a></li>
+          </ul>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link " href="./contact.html" tabindex="-1" >contact</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  </header>
+  <img src="./images (4).jpg" alt=""width="100%" >
+
+  <section class="auto-insurance-section">
+    <div class="container">
+      <h1>Auto Insurance That Goes the Distance</h1>
+      <p class="subtitle">Affordable protection for your car, peace of mind for your journey.</p>
+
+      <div class="plan-overview">
+        <h2>Coverage Highlights</h2>
+        <ul>
+          <li> Collision & Comprehensive Coverage</li>
+          <li> Third-party Liability Protection</li>
+          <li> Roadside Assistance Included</li>
+          <li> Nationwide Garage Network</li>
+        </ul>
+      </div>
+
+      <div class="pricing">
+        <h2>Pricing Overview</h2>
+        <p><strong>Plans starting at $25/month</strong> based on your car model, location, and driving history.</p>
+      
+      </div>
+
+
+
+
+      <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">What is covered under this auto insurance?</button>
+          <div class="faq-answer">
+            <p>It covers vehicle damage, theft, third-party injury, and property damage. Add-ons like roadside help are included.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How is the premium calculated?</button>
+          <div class="faq-answer">
+            <p>Premium is based on your car type, age, usage, driving record, and coverage type selected.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I switch my current insurance provider?</button>
+          <div class="faq-answer">
+            <p>Yes, you can switch at renewal or cancel mid-term (with possible refunds). We'll help you transfer coverage smoothly.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3> Insurance</h3>
+                    <p>Protecting your dreams and securing your future since 1985.</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Insurance Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="./lifeinsurance.html">Life Insurance</a></li>
+                        <li><a href="./autoinsurance.html">Auto Insurance</a></li>
+                        <li><a href="./index.html">Home Insurance</a></li>
+                        <li><a href="./health insurance.html">Health Insurance</a></li>
+                        <li><a href="./service.html">Business Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">File a Claim</a></li>
+                        <li><a href="#">Pay Bill</a></li>
+                        <li><a href="#">Find an Agent</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>1-800-SECURE-LIFE</p>
+                    <p>support@securelife.com</p>
+                    <p>123 Insurance Avenue<br>New York, NY 10001</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025  Insurance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

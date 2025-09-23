@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Insurance Details</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+  <style>
+ 
+  .life-insurance-section {
+  background-image: url(./sky-blue-background-jqm8aj5f36bqea5s.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    color: black;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .life-insurance-section::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+  }
+
+  .life-insurance-section .container {
+    position: relative;
+    z-index: 2;
+  }
+
+
+  .life-insurance-section h1,
+  .life-insurance-section h2,
+  .life-insurance-section p,
+  .life-insurance-section li {
+    animation: fadeInUp 1s ease forwards;
+    opacity: 0;
+  }
+
+  .life-insurance-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation-delay: 0.2s;
+  }
+
+  .life-insurance-section h2 {
+    margin-top: 40px;
+    font-size: 2em;
+    animation-delay: 0.4s;
+  }
+
+  .life-insurance-section .subtitle {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    animation-delay: 0.3s;
+  }
+
+  .life-insurance-section ul li {
+    margin-bottom: 10px;
+    animation-delay: 0.5s;
+  }
+
+  .life-insurance-section img {
+    max-width: 100%;
+    margin: 40px 0;
+    border-radius: 10px;
+    animation: fadeIn 1.2s ease forwards;
+    opacity: 0;
+  }
+
+
+  .faq-question {
+    background-color: white;
+    color:black;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  .faq-question:hover {
+    background-color: #e0e0e0;
+  }
+
+  .faq-answer {
+    background-color: #f9f9f9;
+    color: #000;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 20px;
+    border-left: 4px solid #007bff;
+    margin-bottom: 10px;
+  }
+
+  .faq-answer.open {
+    padding: 10px 20px;
+    max-height: 200px;
+  }
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+
+  footer {
+    background:lightblue;
+    color: black;
+    padding: 40px 0;
+    animation: fadeInUp 1.2s ease forwards;
+    opacity: 0;
+  }
+</style>
+
+  </style>
+</head>
+<body>
+    <header>
+    <div class="logo">
+      <img src="./360_F_463184824_xD3gLLjRH73vvrFUwrBhe8H538MjCOt6-removebg-preview.png" alt="Insurance Logo" />
+    </div>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">index</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+       <li class="nav-item dropdown">
+          <a class="nav-link" href="./service.html" id="navbarDropdown" >
+            Service
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="./lifeinsurance.html">life insurance</a></li>
+            <li><a class="dropdown-item" href="./autoinsurance.html">Auto insurance</a></li>
+          
+            <li><a class="dropdown-item" href="./health insurance.html">Health insurance</a></li>
+          </ul>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link " href="./contact.html" tabindex="-1" >contact</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+  </header>
+<img src="./images (6).jpg" alt=""width="100%">
+  <section class="life-insurance-section">
+    <div class="container">
+      <h1>Secure Your Future with Life Insurance</h1>
+      <p class="subtitle">A plan that provides financial protection to your loved ones when they need it most.</p>
+
+      <div class="plan-overview">
+        <h2>Why Choose Our Life Insurance?</h2>
+        <ul>
+          <li> Flexible premium options</li>
+          <li> Lump sum payout on death or terminal illness</li>
+          <li> Add-on options for critical illness & disability</li>
+          <li> Tax benefits under section 80C & 10(10D)</li>
+        </ul>
+      </div>
+
+      <div class="pricing">
+        <h2>Pricing Plans</h2>
+        <p><strong>Starting from $20/month</strong> based on your age and coverage amount.</p>
+       
+      </div>
+ 
+
+
+
+      <div class="faq">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+          <button class="faq-question">What does life insurance cover?</button>
+          <div class="faq-answer">
+            <p>It provides a lump sum to your beneficiaries in case of death or terminal illness during the policy term.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">How is the premium calculated?</button>
+          <div class="faq-answer">
+            <p>Premium is based on your age, health, term length, and sum insured. Optional riders can affect cost.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">Can I cancel or change the plan?</button>
+          <div class="faq-answer">
+            <p>Yes, you can modify coverage or cancel within the free-look period or during the policy term (T&Cs apply).</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3> Insurance</h3>
+                    <p>Protecting your dreams and securing your future since 1985.</p>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">LinkedIn</a>
+                        <a href="#">Instagram</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Insurance Products</h3>
+                    <ul class="footer-links">
+                        <li><a href="./lifeinsurance.html">Life Insurance</a></li>
+                        <li><a href="./autoinsurance.html">Auto Insurance</a></li>
+                        <li><a href="./index.html">Home Insurance</a></li>
+                        <li><a href="./health insurance.html">Health Insurance</a></li>
+                        <li><a href="./service.html">Business Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">File a Claim</a></li>
+                        <li><a href="#">Pay Bill</a></li>
+                        <li><a href="#">Find an Agent</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>1-800-SECURE-LIFE</p>
+                    <p>support@securelife.com</p>
+                    <p>123 Insurance Avenue<br>New York, NY 10001</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025  Insurance. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
